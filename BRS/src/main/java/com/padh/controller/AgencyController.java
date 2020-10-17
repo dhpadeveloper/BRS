@@ -1,6 +1,7 @@
 package com.padh.controller;
 
 import java.net.URI;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +29,12 @@ public class AgencyController {
 	
 @GetMapping("/agencies")	
 public  ResponseEntity<Iterable<Agency>> fetchAgencies(){
+	List<Agency> agList= (List<Agency>) agencyRepository.findAll();
 	
-	return ResponseEntity.ok().body(agencyRepository.findAll());
+	if(agList.size()<=0)
+    throw new AgentNotFoundException("No Agency Found");
+	//ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+	return ResponseEntity.ok().body(agList);
 	
 	
 }

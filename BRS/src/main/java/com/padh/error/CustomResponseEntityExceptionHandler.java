@@ -14,15 +14,12 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler(AgentNotFoundException.class)
-	
-	@Override
-	protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers,
-			HttpStatus status, WebRequest request) {
+	protected ResponseEntity<Object> handleExceptionInternal(AgentNotFoundException ex, WebRequest request) {
 		CustomErrorResponse error = new CustomErrorResponse();
 		error.setError(ex.getMessage());
 		error.setTimestamp(LocalDateTime.now());
-		error.setStatus(HttpStatus.NOT_FOUND.value());
-		
-		return new ResponseEntity<>(error,HttpStatus.NOT_FOUND);
-	}
+		error.setDetail(request.getDescription(false));
+        error.setStatus(HttpStatus.NOT_FOUND.value());		
+		return new ResponseEntity(error,HttpStatus.NOT_FOUND);
+}
 }
