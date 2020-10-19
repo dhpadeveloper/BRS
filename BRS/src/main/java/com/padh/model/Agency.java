@@ -26,7 +26,8 @@ public class Agency extends Auditable<String>{
 	private String detail;
 	private String owner;
 	
-	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy ="agency")
+	@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@JoinColumn(name = "agency_id")
      private List<Bus> busList= new ArrayList<>(0);
 	
 
