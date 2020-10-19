@@ -21,9 +21,6 @@ public class Bus extends Auditable<String> {
 	private String code;
 	private String make;
 	private int capacity ;
-	@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-	@JoinColumn(name = "agency_id")
-	private Agency agency;
 	
 	
 
