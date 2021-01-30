@@ -1,0 +1,2019 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/clientlib-all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/pl_style_revamp.css?v=2.3" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Kotak Business Loan</title>
+    <style type="text/css">
+        .right-info-box h1,
+        h2,
+        label,
+        input,
+        p,
+        li {
+            /* font-family: 'Source Sans Pro', sans-serif !important; */
+            font-family: Roboto !important;
+        }
+
+        #main-div {
+            top: -164px;
+            position: relative;
+            margin-bottom: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-box animated" style="top: -62px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-9 col-xs-7">
+                    <div class="clearfix">
+                        <div class="logo">
+                            <img src="images/kotak-logo.png"
+                                alt="Kotak Mahindra Bank" height="44px" width="173px" title="Kotak Mahindra Bank">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-5 loging-box clearfix">
+                    <ul>
+                        <li>
+                            <span class="pl-icon"></span><h3>Business Loan</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner-div inside">
+        <div class="container text-center">
+            <ul class="step-nav">
+                <li class="step-1 current">Preliminary Details</li>
+                <li class="step-2 disabled">Loan Evaluation</li>
+                <li class="step-3 disabled">Eligibility</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" style="transform: none;">
+        <div class="row" id="main-div" style="transform: none;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 right-section">
+                <div class="right-info-box inside-form main_div_l_margin" id="application-step-1">
+                    <div id="qde1_form" class="qde1-seg" style="display: block;">
+                        <h1 class="main-head">Hi Kunal!</h1>
+                        <p>Welcome, your details have been verified!<br>In order to check your eligibility for the
+                            Business Loan, we need a few more details.</p>
+                        <p class="mb-4 pb-4"></p>
+                        <p class="mb-4 pb-4"></p>
+                        <form name="submit_ntb_form" id="submit_ntb_form" method="post" action="javascript:;"
+                            autocomplete="off" novalidate="novalidate">
+                            <ul class="form-sec">
+                                <li>
+                                    <label>First Name <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li>
+                                    <label>Last Name <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li id="emp_name_li" style="">
+                                    <label>Date of Birth <span class="req">*</span></label>
+                                    <input type="date" name="co_date_of_birth" id="co_date_of_birth" value=""
+                                        maxlength="10" class="form-control calender-icon hasDatepick"
+                                        autocomplete="off">
+                                </li>
+                                <li>
+                                    <label>CRN <span class="req">*</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                                <li>
+                                    <label>Registered Mobile Number<span class="req"> *</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li>
+                                    <label>Registered Email ID <span class="req">*</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <p class="mt-4 pt-4"></p>
+                            <p class="pb-4 mb-4">A few more details about the nature of your business, and the loan
+                                amount required.</p>
+                            <ul class="form-sec">
+                                <li>
+                                    <label>Type of Business <span class="req">*</span></label>
+
+                                    <select  data-placeholder="Select" name="residingCity" id="residingCity"
+                                        class="selectDiv form-select singleSelectBoxValid mt-15"
+                                        tabindex="-1" aria-hidden="true">
+                                        <option value="select">Select</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                    <!-- <span class="select2 select2-container select2-container--default" dir="ltr"
+                                        style="width: auto;">
+                                        <span class="selection">
+                                            <span class="select2-selection select2-selection--single" role="combobox"
+                                                aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"
+                                                tabindex="0" aria-labelledby="select2-residingCity-container">
+                                                <span class="select2-selection__rendered"
+                                                    id="select2-residingCity-container">
+                                                    <span style="color:black;" class="select2-selection__placeholder">Select</span>
+                                                </span>
+                                                <span class="select2-selection__arrow" role="presentation">
+                                                    <b role="presentation"></b>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                    </span> -->
+                                </li>
+                                <li>
+                                    <label>Personal PAN Number</label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li>
+                                    <label>Business Location <span class="req">*</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                                <li>
+                                    <label>PIN Code<span class="req"> *</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                                <li>
+                                    <label>Your Desired Loan Amount (in INR, Lakhs) <span class="req">*</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                            </ul>
+                            <ul class="form-sec">
+                                <li class="last-li">
+                                    <input type="checkbox" class="css-checkbox" name="infoprovide" id="infoprovide">
+                                    <label for="infoprovide" class="label-content">By clicking the checkbox, I hereby
+                                        agree to adibe & be bound by the terms and conditions applicable to business
+                                        loan. </label>
+                                </li>
+                                <li class="last-li">
+                                    <button type="submit" id="prcbtn" class="prcd-btn"
+                                        style="cursor:pointer;" onclick="scrollToTop()">Proceed</button>
+                                    <input onclick="location.href='inside.html'" value="Back" id="bckbtn" class="back-btn" type="button">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-info-box inside-form main_div_l_margin" id="application-step-2" style="display: none;">
+                    <div id="qde1_form" class="qde1-seg" style="display: block;">
+                        <h1>Your Business Details</h1>
+                        <p>Now that we have your basic details, tell us more about your business.</p>
+                        <p class="pb-5 mb-5"></p>
+                        <p class="pb-2 mb-2"></p>
+                        <form name="submit_ntb_form" id="submit_ntb_form" method="post" action="javascript:;"
+                            autocomplete="off" novalidate="novalidate">
+                            <ul class="form-sec">
+                                <li>
+                                    <label>Is your business more than 3 years old? <span class="req">*</span></label>
+                                    <div class="radio-grp">
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_y" value="Y" name="sal_account_flg"
+                                                class="sal_account_flg" aria-required="true">
+                                            <label for="sal_account_y">Yes</label>
+                                        </div>
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_n" value="N" name="sal_account_flg"
+                                                class="sal_account_flg">
+                                            <label for="sal_account_n">No</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Have you taken any unsecured loan in the past 6 months? <span
+                                            class="req">*</span></label>
+                                    <div class="radio-grp">
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_y2" value="Y" name="sal_account_flg2"
+                                                class="sal_account_flg" aria-required="true">
+                                            <label for="sal_account_y2">Yes</label>
+                                        </div>
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_n2" value="N" name="sal_account_flg2"
+                                                class="sal_account_flg">
+                                            <label for="sal_account_n2">No</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Do you pay all your credit card/ loan dues on time? <span
+                                            class="req">*</span></label>
+                                    <div class="radio-grp">
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_y3" value="Y" name="sal_account_flg3"
+                                                class="sal_account_flg" aria-required="true">
+                                            <label for="sal_account_y3">Yes</label>
+                                        </div>
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_n3" value="N" name="sal_account_flg3"
+                                                class="sal_account_flg">
+                                            <label for="sal_account_n3">No</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Is your annual business turnover more than INR 50 Lakhs? <span
+                                            class="req">*</span></label>
+                                    <div class="radio-grp">
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_y4" value="Y" name="sal_account_flg4"
+                                                class="sal_account_flg" aria-required="true">
+                                            <label for="sal_account_y4">Yes</label>
+                                        </div>
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_n4" value="N" name="sal_account_flg4"
+                                                class="sal_account_flg">
+                                            <label for="sal_account_n4">No</label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Do you or your family own any property <br>(Office or Residence)?<span
+                                        class="req"> *</span> <br> <em>Note,
+                                            we will not ask you to mortgage this.</em> </label>
+                                    <div class="radio-grp">
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_y5" value="Y" name="sal_account_flg5"
+                                                class="sal_account_flg" aria-required="true">
+                                            <label for="sal_account_y5">Yes</label>
+                                        </div>
+                                        <div class="blue-radio blue-radio-danger">
+                                            <input type="radio" id="sal_account_n5" value="N" name="sal_account_flg5"
+                                                class="sal_account_flg">
+                                            <label for="sal_account_n5">No</label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <p class="pb-4 mb-4"></p>
+                            <ul class="form-sec">
+                                <li class="last-li">
+                                    <button type="submit" id="prcbtn" onclick="location.href='inside_confirmation.html'"
+                                        class="prcd-btn" style="cursor:pointer;">Proceed</button>
+                                    <input value="Back" id="bckbtn" class="back-btn" onclick="scrollToTop()" type="button">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <!-- <div class="over-lay section">
+
+            <div id="overlay-1525784643723" current-node="overlay_1762728737"
+                class="modal overlay-currentnode form-success-modal-overlay_1762728737 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>At your request, you are being re-directed to a third party site - <a
+                                                    href="http://www.billdesk.com/pgmerc/kotakcard/">http://www.billdesk.com/pgmerc/kotakcard/</a>
+                                                wherein you can make your payment from a different bank account. Kotak
+                                                Cards does not guarantee or warrant the accuracy or completeness of the
+                                                information, materials, services or the reliability of any service,
+                                                advice, opinion statement or other information displayed or distributed
+                                                on the third party site. You shall access this site solely for purposes
+                                                of payment of your bills and you understand and acknowledge that
+                                                availing of any services offered on the site or any reliance on any
+                                                opinion, advice, statement, memorandum, or information available on the
+                                                site shall be at your sole risk. Kotak Cards and its affiliates,
+                                                subsidiaries, employees, officers, directors and agents, expressly
+                                                disclaim any liability for any deficiency in the services offered by
+                                                BilIDesk whose site you are about to access. Neither Kotak Cards nor any
+                                                of its affiliates nor their directors, officers and employees will be
+                                                liable to or have any responsibility of any kind for any loss that you
+                                                incur in the event of any deficiency in the services of BiIIDesk to whom
+                                                the site belongs, failure or disruption of the site of BilIDesk, or
+                                                resulting from the act or omission of any other party involved in making
+                                                this site or the data contained therein available to you, or from any
+                                                other cause relating to your access to, inability to access, or use of
+                                                the site or these materials.<br>
+                                            </p>
+                                            <p class="btn-box" style="text-align: center;"><a
+                                                    href="https://pgi.billdesk.com/pgidsk/pgmerc/kotakcard/kotak_card.jsp"
+                                                    class="btn btn-primary MR25" target="_blank">I Accept</a></p>
+                                            <p>Note: Available in select banks only. Kotak Cards reserves the right to
+                                                add/delete banks without prior notice. © Kotak Mahindra Bank. All rights
+                                                reserved</p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1527076672951" current-node="overlay_719302322"
+                class="modal overlay-currentnode form-success-modal-overlay_719302322 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>This is to inform that by clicking on the hyper-link, you will be leaving
+                                                Kotak.com and entering website operated by other parties. Such links are
+                                                provided only for the convenience of the Client and Kotak Mahindra Bank
+                                                does not control or endorse such websites, and it is not responsible for
+                                                the information shared by you to PayTM.Proceed<br>
+                                            </p>
+                                            <p class="btn-box" style="text-align: center;"><a
+                                                    href="https://pgi.billdesk.com/pgidsk/pgmerc/instpy/162NBPay.jsp?billerid=HUDAINSTA"
+                                                    class="btn btn-primary MR25" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1527076739746" current-node="overlay_286904789"
+                class="modal overlay-currentnode form-success-modal-overlay_286904789 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>This is to inform that by clicking on the hyper-link, you will be leaving
+                                                Kotak.com and entering website operated by other parties. Such links are
+                                                provided only for the convenience of the Client and Kotak Mahindra Bank
+                                                does not control or endorse such websites, and it is not responsible for
+                                                the information shared by you to PayTM.Proceed<br>
+                                            </p>
+                                            <p class="btn-box" style="text-align: center;"><a
+                                                    href="https://pgi.billdesk.com/pgidsk/pgmerc/instpy/162NBPay.jsp?billerid=PHEDWBINST"
+                                                    class="btn btn-primary MR25" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1527076861853" current-node="overlay_1969562335"
+                class="modal overlay-currentnode form-success-modal-overlay_1969562335 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>This is to inform that by clicking on the hyper-link, you will be leaving
+                                                Kotak.com and entering website operated by other parties. Such links are
+                                                provided only for the convenience of the Client and Kotak Mahindra Bank
+                                                does not control or endorse such websites, and it is not responsible for
+                                                the information shared by you to PayTM.Proceed<br>
+                                            </p>
+                                            <p class="btn-box" style="text-align: center;"><a
+                                                    href="https://pgi.billdesk.com/pgidsk/pgmerc/instpy/UJSINSTADetails.jsp"
+                                                    class="btn btn-primary MR25" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1532420790151" current-node="overlay_277093769"
+                class="modal overlay-currentnode form-success-modal-overlay_277093769 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>Please note by login in to the above link and clicking on the “Submit”
+                                                button, you provide your consent and acceptance to,</p>
+                                            <ul class="list-points">
+                                                <li>Submit the three years financial statements online to the Bank
+                                                    through our partnered website Finfort.</li>
+                                                <li>Our partnered website downloading /obtaining the comprehensive
+                                                    financial analysis reports from Income Tax, Traces and Ministry of
+                                                    Corporate Affairs Portals and submitting the same to the Bank for
+                                                    the purposes of credit due diligence.</li>
+                                                <li>The terms and conditions of our Partnered website.</li>
+                                                <li>Authorise the bank to make any enquiries regarding your repayment
+                                                    history with banks, financial institutions, credit bureaus,
+                                                    agencies, statutory bodies etc. as may be required or as they may
+                                                    deem fit.</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p class="btn-box " style="text-align: center;"><a
+                                                    href="https://borrowerportal.finfort.ind.in:8443/BorrowerPortal/login/KMBL"
+                                                    class="btn btn-primary">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1532420790151" current-node="overlay_277093769_co"
+                class="modal overlay-currentnode form-success-modal-overlay_277093769_co success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>Please note by login in to the above link and clicking on the “Submit”
+                                                button, you provide your consent and acceptance to,</p>
+                                            <ul class="list-points">
+                                                <li>Submit the three years financial statements online to the Bank
+                                                    through our partnered website Finfort.</li>
+                                                <li>Our partnered website downloading /obtaining the comprehensive
+                                                    financial analysis reports from Income Tax, Traces and Ministry of
+                                                    Corporate Affairs Portals and submitting the same to the Bank for
+                                                    the purposes of credit due diligence.</li>
+                                                <li>The terms and conditions of our Partnered website.</li>
+                                                <li>Authorise the bank to make any enquiries regarding your repayment
+                                                    history with banks, financial institutions, credit bureaus,
+                                                    agencies, statutory bodies etc. as may be required or as they may
+                                                    deem fit.</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p class="btn-box " style="text-align: center;"><a
+                                                    href="https://borrowerportal.finfort.ind.in:8443/BorrowerPortal/login/KMBL"
+                                                    class="btn btn-primary">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1534410917815" current-node="overlay_1381560649"
+                class="modal overlay-currentnode form-success-modal-overlay_1381560649 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>By clicking on the link, you will be leaving <a
+                                                    href="https://www.kotak.com">www.kotak.com</a> and entering website
+                                                operated by other parties. Kotak Mahindra Bank does not control or
+                                                endorse such websites, and bears no responsibility for them.</p>
+                                            <p class="btn-box " style="text-align: center;"><a
+                                                    href="https://pgi.billdesk.com/pgidsk/pgmerc/instpy/162NBPay.jsp?billerid=REDGRINSTA"
+                                                    class="btn btn-primary" target="_blank">I Agree</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- <div class="chatbot section">
+
+<script type="text/javascript" src="/etc/designs/kotak/clientlib-site/js/jquery.js"></script>
+
+
+<script type="text/javascript" defer="" src="https://keya.kotak.com/morfeuswebsdk/js/chatBot.js"></script>
+<div id="defChatButtonContainer" class="proactivechatbot" style="display: block;">
+    
+        <input type="hidden" id="proActivePageId">
+        <input type="hidden" id="proActivePageContext" value="website">
+    
+    <input type="hidden" id="chatboxOnPageLoad" class="proactiveNudge" data-time="2">
+    <div id="ai-container" class="chatButton">
+        <div class="ai-launcher">
+            <div class="call-Chat-Bot">
+                <div class="pro-active-chatbot-text" style="">
+                    <p>Hi !  Need some help?</p>
+                </div>
+                <div class="ai-launcher-open-icon"></div>
+            </div>
+            <div class="pro-active-chatbot-close close-Chat-Bot">
+                <figure>
+                    <img src="/etc/designs/kotak/clientlib-site/images/svg-icon/keya-chatbot/keya-close-icon.svg" width="20" height="20" alt="icon" class="MR10">
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div> --><!--
+        <div class="over-lay section">
+
+            <div id="overlay-1603462602796" current-node="overlay_copy"
+                class="modal overlay-currentnode form-success-modal-overlay_copy success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>By clicking on the hyper-link, you will be leaving <a
+                                                    href="https://www.kotak.com/en.html"
+                                                    target="_self">www.kotak.com</a> and entering website operated by
+                                                other parties. Kotak Mahindra Bank does not control or endorse such
+                                                websites, and bears no responsibility for them.&nbsp;</p>
+                                            <p class="btn-box popup-close" style="text-align: center;"><a
+                                                    href="https://www.kotaksecurities.com/landingpage/searchnew/3-in-1-kotak-account.jsp"
+                                                    class="btn btn-primary" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1605875387484" current-node="overlay"
+                class="modal overlay-currentnode form-success-modal-overlay success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>By clicking on the hyper-link, you will be leaving <a
+                                                    href="https://www.kotak.com/en.html"
+                                                    target="_self">www.kotak.com</a> and entering website operated by
+                                                other parties. Kotak Mahindra Bank does not control or endorse such
+                                                websites, and bears no responsibility for them.&nbsp;</p>
+                                            <p class="btn-box popup-close" style="text-align: center;"><a
+                                                    href="https://pgi.billdesk.com/pgidsk/pgmerc/instpy/QSGIFTCARDDetails.jsp"
+                                                    class="btn btn-primary" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1605875778332" current-node="overlay_762187938"
+                class="modal overlay-currentnode form-success-modal-overlay_762187938 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>By clicking on the hyper-link, you will be leaving <a
+                                                    href="https://www.kotak.com/en.html"
+                                                    target="_self">www.kotak.com</a> and entering website operated by
+                                                other parties. Kotak Mahindra Bank does not control or endorse such
+                                                websites, and bears no responsibility for them.&nbsp;</p>
+                                            <p class="btn-box popup-close" style="text-align: center;"><a
+                                                    href="https://payments.billdesk.com/ubp/bbps/instapay/KTKInstapay.jsp"
+                                                    class="btn btn-primary" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1605876787290" current-node="overlay_1787161191"
+                class="modal overlay-currentnode form-success-modal-overlay_1787161191 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>By clicking on the hyper-link, you will be leaving <a
+                                                    href="https://www.kotak.com/en.html"
+                                                    target="_self">www.kotak.com</a> and entering website operated by
+                                                other parties. Kotak Mahindra Bank does not control or endorse such
+                                                websites, and bears no responsibility for them.&nbsp;</p>
+                                            <p class="btn-box popup-close" style="text-align: center;"><a
+                                                    href="https://payments.billdesk.com/MercOnline/kotakemi/kotakEMITermsAndConditions.jsp?type=retail"
+                                                    class="btn btn-primary" target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="over-lay section">
+
+            <div id="overlay-1609754902429" current-node="overlay_881167855"
+                class="modal overlay-currentnode form-success-modal-overlay_881167855 success-modal fade get-help-popup"
+                role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content clearfix pad15">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <div class="white-box clearfix">
+                            <h3>
+
+                                Disclaimer</h3>
+                            <div>
+                                <div>
+                                    <div class="text section">
+                                        <div class="cmp-text">
+                                            <p>By clicking on the link, you will be leaving <a
+                                                    href="https://www.kotak.com">www.kotak.com</a> and entering website
+                                                operated by other parties. Kotak Mahindra Bank does not control or
+                                                endorse such websites, and bears no responsibility for them.</p>
+                                            <p class="btn-box " style="text-align: center;"><a
+                                                    href="https://www.sihub.in/managesi/kotak/" class="btn btn-primary"
+                                                    target="_blank">Proceed</a></p>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="section">
+            <div class="new"></div>
+        </div>
+        <div class="iparys_inherited">
+            <div class="ifooter_support_par iparsys parsys"></div>
+        </div>
+        <div>
+        </div>-->
+        <!-- <div class="container">
+            <div class="back-to-top">
+                <a href="javascript:void(0)">Back to Top <i class="icon-more-arow ic-box-top"></i></a>
+            </div>
+        </div> -->
+        <!--<div class="pt-5 mt-5"></div>
+        <div>
+
+
+
+
+            <section class="light_gry_bg">
+                <div class="container">
+
+                    <div class="row footer-sitemap hidden-xs">
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/about-us.html" target="_top">About us</a>
+                                            </h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/about-us/our-business.html" target="_blank">Our
+                                                Businesses</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/about-us/media.html" target="_top">Media
+                                                Centre</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/about-us/corporate-responsibility.html"
+                                                target="_top">Corporate Responsibility</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/about-us/careers.html"
+                                                target="_blank">Careers</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/difc.html" target="_top">DIFC
+                                                Branch</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/investor-relations.html"
+                                                    target="_top">Investor Relations</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/investor-relations/financial-results.html"
+                                                target="_top">Financials</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/investor-relations/governance.html"
+                                                target="_top">Governance</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/investor-relations/investor-information.html"
+                                                target="_top">Investor Info</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/customer-service.html"
+                                                    target="_top">Customer Service</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/important-customer-information.html"
+                                                target="_top">Important Information</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/grievance-redressal.html"
+                                                target="_top">Grievance Redressal</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/important-customer-information/banking-ombudsman.html"
+                                                target="_top">Banking Ombudsman</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/download-forms.html"
+                                                target="_top">Download Forms</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://www.kotak.com/en/customer-service/service-request.html"
+                                                target="_top">Service Requests</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/transaction-services/track-application.html"
+                                                target="_top">Track Application Status</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://www.kotak.com/j1001card/CardStatus/donotcall.jsp"
+                                                target="_top">Do not call</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/safe-banking.html" target="_top">Tips on Safe
+                                                Banking</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/doorstep-banking-service.html"
+                                                target="_top">Doorstep Banking Service</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/about-us.html" target="_top">Aadhaar
+                                                    Services</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="https://www.kotak.com/srforms/content/forms/af/kotakforms/aadhaarupdate.html"
+                                                target="_top">Link your Aadhaar</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/aadhaar-enrollment-center.html"
+                                                target="_top">Aadhaar Enrollment Center</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/calculators.html" target="_top">Calculators
+                                                    &amp; Tools</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/calculators/emi-calculator.html"
+                                                target="_top">EMI Calculator</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/calculators/goal-planner.html"
+                                                target="_top">Goal Planner</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/insurance/life-insurance.html"
+                                                target="_top">Life Insurance Premium</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/deposits/recurring-deposits/recurring-deposit-calculator.html"
+                                                target="_top">Recurring Deposit</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/calculators/retirement-calculator.html"
+                                                target="_top">Retirement Calculator</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/cards/credit-cards/compare-credit-cards.html"
+                                                target="_top">Compare Credit Cards</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a class="disable-event" target="_top">Rates &amp; fees</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/rates/interest-rates.html"
+                                                target="_top">Interest Rates</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/gsfc.html" target="_top">Fees &amp; Charges
+                                                (GSFC)</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/important-customer-information/good-services-tax-gst.html"
+                                                target="_top">Goods &amp; Services Tax (GST)</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix visible-sm"></div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/digital-banking.html" target="_top">Digital
+                                                    Banking</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/digital-banking/ways-to-bank.html"
+                                                target="_top">Ways to Bank</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/digital-banking/insta-services.html"
+                                                target="_top">Insta Services</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/digital-banking/business-solutions.html"
+                                                target="_top">Business &amp; Fintech</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a class="disable-event" target="_top">Self Help</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/help-center.html" target="_top">Help Center</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/digital-banking/ways-to-bank/keya.html"
+                                                target="_top">Chat with Keya</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/personal-banking/financial-inclusions.html"
+                                                    target="_top">Financial Inclusion</a></h3>
+                                        </li>
+
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/about-merger.html"
+                                                    target="_top">About Merger</a></h3>
+                                        </li>
+
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a class="disable-event" target="_top">Erstwhile ING Vysya</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/savings-accounts.html"
+                                                target="_top">Savings Account</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/current-accounts.html"
+                                                target="_top">Current Account</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/debit-card.html"
+                                                target="_top">Debit Card</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/loan/gold-loan.html"
+                                                target="_top">Loan</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/institutional-accounts.html"
+                                                target="_top">Institutional Accounts</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6">
+                            <div>
+                                <div class="footer-links section">
+                                    <ul class="footerSpace">
+                                        <li>
+                                            <h3><a class="disable-event" target="_top">Others</a></h3>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/personal-banking/cards/credit-cards/mitc-and-ca.html"
+                                                target="_top">Credit Card T&amp;C</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/customer-service/public-notices.html"
+                                                target="_blank">Public Notice</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/investor-relations/financial-results/regulatory-disclosure.html"
+                                                target="_top">Regulatory Disclosure</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/dam/Kotak/others/Certificate-Correspondent-Accounts-KM-Inc.pdf"
+                                                target="_blank">USA Patriot Act Certification</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/dam/Kotak/others/anti-money-laundering-questionnaire.pdf"
+                                                target="_blank">Wolfsberg AML Questionnaire</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/ifsc-banking-unit.html" target="_top">IFSC
+                                                Banking Unit</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/knowledge-centre.html" target="_top">Knowledge
+                                                Centre</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/content/kotakcl/en/bank-auctions.html" target="_top">Auction Cum
+                                                Sale Notice</a>
+                                        </li>
+
+                                    </ul>
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                    </div>
+                    <div class="row footer-other">
+                        <div class="col-md-3 col-sm-3 hidden-xs">
+                            <h3>Connect With Us</h3>
+                            <ul class="sosial-icon clearfix">
+                                <li><a href="https://www.facebook.com/KotakBank/" target="_blank"><i
+                                            class="fa fa-facebook-f fa"></i></a></li>
+
+                                <li><a href="https://twitter.com/kotakbankltd?lang=en" target="_blank"><i
+                                            class="fa fa-twitter fa"></i></a></li>
+
+                                <li><a href="https://www.youtube.com/user/KotakBankIndia" target="_blank"><i
+                                            class="fa fa-youtube fa"></i></a></li>
+
+                                <li><a href="https://www.linkedin.com/company/kotak-mahindra-bank" target="_blank"><i
+                                            class="fa fa-linkedin fa"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <h3>Install Kotak - 811 &amp; Mobile Banking App</h3>
+
+                            <ul class="horizon-list-box clearfix">
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.msf.kbank.mobile"
+                                        target="_blank"><img class=" lazyloaded"
+                                            data-src="https://www.kotak.com/content/dam/Kotak/google-play.png"
+                                            alt="Google Play" title="Google Play"
+                                            src="https://www.kotak.com/content/dam/Kotak/google-play.png"></a>
+                                </li>
+
+                                <li>
+                                    <a href="https://itunes.apple.com/in/app/kotak-bank/id622363400?mt=8"
+                                        target="_blank"><img class=" lazyloaded"
+                                            data-src="https://www.kotak.com/content/dam/Kotak/apple-store.png"
+                                            alt="Apple App Store" title="Apple App Store"
+                                            src="https://www.kotak.com/content/dam/Kotak/apple-store.png"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3 hidden-xs">
+                            <h3>&nbsp;</h3>
+                            <ul class="horizon-list-box clearfix">
+                                <li>
+                                    <img class=" lazyloaded" data-src="/content/dam/Kotak/entrust.png"
+                                        alt="Entrust Secured" title="Entrust Secured"
+                                        src="https://www.kotak.com/content/dam/Kotak/entrust.png">
+                                </li>
+
+                                <li>
+                                    <img class=" lazyloaded" data-src="/content/dam/Kotak/verisign.png" alt="Verisign"
+                                        title="Verisign" src="https://www.kotak.com/content/dam/Kotak/verisign.png">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3 hidden-xs">
+                            <h3>&nbsp;</h3>
+                            <div class="clearfix">
+                                <div class="dropup group-site-dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Kotak Group Companies
+                                        <span class="fa-chevron-down fa"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://assetmanagement.kotak.com/?utm_source=kotak_bank&amp;utm_medium=link_redirection"
+                                                target="_blank">Kotak Asset Management</a></li>
+
+                                        <li><a href="http://www.kotakgeneralinsurance.com/" target="_blank">Kotak
+                                                General Insurance</a></li>
+
+                                        <li><a href="https://kie.kotak.com/" target="_blank">Kotak Institutional
+                                                Equities</a></li>
+
+                                        <li><a href="http://investindia.kotak.com/" target="_blank">Kotak International
+                                                Business</a></li>
+
+                                        <li><a href="https://alternateassets.kotak.com" target="_blank">Kotak Investment
+                                                Advisors</a></li>
+
+                                        <li><a href="http://www.investmentbank.kotak.com" target="_blank">Kotak
+                                                Investment Banking</a></li>
+
+                                        <li><a href="https://insurance.kotak.com/" target="_blank">Kotak Life
+                                                Insurance</a></li>
+
+                                        <li><a href="http://www.kmil.co.in/" target="_blank">Kotak Mahindra
+                                                Investments</a></li>
+
+                                        <li><a href="http://carloan.kotak.com/" target="_blank">Kotak Mahindra Prime</a>
+                                        </li>
+
+                                        <li><a href="http://www.kotaksecurities.com/" target="_blank">Kotak Securities
+                                                Limited</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer-support visible-xs">
+                        <div class=" footer-other">
+                            <div class="clearfix">
+                                <ul class="sosial-icon clearfix ohidden">
+                                    <li><a href="https://www.facebook.com/KotakBank/" target="_blank"><i
+                                                class="fa fa-facebook-f fa"></i></a></li>
+
+                                    <li><a href="https://twitter.com/kotakbankltd?lang=en" target="_blank"><i
+                                                class="fa fa-twitter fa"></i></a></li>
+
+                                    <li><a href="https://www.youtube.com/user/KotakBankIndia" target="_blank"><i
+                                                class="fa fa-youtube fa"></i></a></li>
+
+                                    <li><a href="https://www.linkedin.com/company/kotak-mahindra-bank"
+                                            target="_blank"><i class="fa fa-linkedin fa"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>About us</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/about-us/our-business.html"
+                                                    target="_blank">Our Businesses</a></li>
+
+                                            <li><a href="/content/kotakcl/en/about-us/media.html" target="_top">Media
+                                                    Centre</a></li>
+
+                                            <li><a href="/content/kotakcl/en/about-us/corporate-responsibility.html"
+                                                    target="_top">Corporate Responsibility</a></li>
+
+                                            <li><a href="/content/kotakcl/en/about-us/careers.html"
+                                                    target="_blank">Careers</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/difc.html"
+                                                    target="_top">DIFC Branch</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Investor Relations</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/investor-relations/financial-results.html"
+                                                    target="_top">Financials</a></li>
+
+                                            <li><a href="/content/kotakcl/en/investor-relations/governance.html"
+                                                    target="_top">Governance</a></li>
+
+                                            <li><a href="/content/kotakcl/en/investor-relations/investor-information.html"
+                                                    target="_top">Investor Info</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Customer Service</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/customer-service/important-customer-information.html"
+                                                    target="_top">Important Information</a></li>
+
+                                            <li><a href="/content/kotakcl/en/customer-service/grievance-redressal.html"
+                                                    target="_top">Grievance Redressal</a></li>
+
+                                            <li><a href="/content/kotakcl/en/customer-service/important-customer-information/banking-ombudsman.html"
+                                                    target="_top">Banking Ombudsman</a></li>
+
+                                            <li><a href="/content/kotakcl/en/customer-service/download-forms.html"
+                                                    target="_top">Download Forms</a></li>
+
+                                            <li><a href="https://www.kotak.com/en/customer-service/service-request.html"
+                                                    target="_top">Service Requests</a></li>
+
+                                            <li><a href="/content/kotakcl/en/transaction-services/track-application.html"
+                                                    target="_top">Track Application Status</a></li>
+
+                                            <li><a href="https://www.kotak.com/j1001card/CardStatus/donotcall.jsp"
+                                                    target="_top">Do not call</a></li>
+
+                                            <li><a href="/content/kotakcl/en/safe-banking.html" target="_top">Tips on
+                                                    Safe Banking</a></li>
+
+                                            <li><a href="/content/kotakcl/en/customer-service/doorstep-banking-service.html"
+                                                    target="_top">Doorstep Banking Service</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Aadhaar Services</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="https://www.kotak.com/srforms/content/forms/af/kotakforms/aadhaarupdate.html"
+                                                    target="_top">Link your Aadhaar</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/aadhaar-enrollment-center.html"
+                                                    target="_top">Aadhaar Enrollment Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Calculators &amp; Tools</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/calculators/emi-calculator.html"
+                                                    target="_top">EMI Calculator</a></li>
+
+                                            <li><a href="/content/kotakcl/en/calculators/goal-planner.html"
+                                                    target="_top">Goal Planner</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/insurance/life-insurance.html"
+                                                    target="_top">Life Insurance Premium</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/deposits/recurring-deposits/recurring-deposit-calculator.html"
+                                                    target="_top">Recurring Deposit</a></li>
+
+                                            <li><a href="/content/kotakcl/en/calculators/retirement-calculator.html"
+                                                    target="_top">Retirement Calculator</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/cards/credit-cards/compare-credit-cards.html"
+                                                    target="_top">Compare Credit Cards</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Rates &amp; fees</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/rates/interest-rates.html"
+                                                    target="_top">Interest Rates</a></li>
+
+                                            <li><a href="/content/kotakcl/en/gsfc.html" target="_top">Fees &amp; Charges
+                                                    (GSFC)</a></li>
+
+                                            <li><a href="/content/kotakcl/en/customer-service/important-customer-information/good-services-tax-gst.html"
+                                                    target="_top">Goods &amp; Services Tax (GST)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Digital Banking</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/digital-banking/ways-to-bank.html"
+                                                    target="_top">Ways to Bank</a></li>
+
+                                            <li><a href="/content/kotakcl/en/digital-banking/insta-services.html"
+                                                    target="_top">Insta Services</a></li>
+
+                                            <li><a href="/content/kotakcl/en/digital-banking/business-solutions.html"
+                                                    target="_top">Business &amp; Fintech</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Self Help</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/help-center.html" target="_top">Help
+                                                    Center</a></li>
+
+                                            <li><a href="/content/kotakcl/en/digital-banking/ways-to-bank/keya.html"
+                                                    target="_top">Chat with Keya</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="footer-links section">
+
+                                <div class="accordion-links-2 clearfix">
+                                    <i class="right-arow sprite-img"></i>
+                                    <div class="clearfix">
+                                        <div class="ohidden">
+                                            <h4><a href="/content/kotakcl/en/personal-banking/financial-inclusions.html"
+                                                    target="_top">Financial Inclusion</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="footer-links section">
+
+                                <div class="accordion-links-2 clearfix">
+                                    <i class="right-arow sprite-img"></i>
+                                    <div class="clearfix">
+                                        <div class="ohidden">
+                                            <h4><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/about-merger.html"
+                                                    target="_top">About Merger</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Erstwhile ING Vysya</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/savings-accounts.html"
+                                                    target="_top">Savings Account</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/current-accounts.html"
+                                                    target="_top">Current Account</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/debit-card.html"
+                                                    target="_top">Debit Card</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/loan/gold-loan.html"
+                                                    target="_top">Loan</a></li>
+
+                                            <li><a href="/content/kotakcl/en/personal-banking/erstwhile-ing-vysya/institutional-accounts.html"
+                                                    target="_top">Institutional Accounts</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="footer-links section">
+
+
+
+                                <div class="accordion-trgr-2 clearfix">
+                                    <i class="down-arow sprite-img"></i>
+                                    <div class="nav-title">
+                                        <div class="clearfix">
+                                            <div class="ohidden">
+                                                <h4>Others</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-container-2" style="display: none;">
+                                    <div class="footer-sitemap">
+                                        <ul>
+                                            <li><a href="/content/kotakcl/en/personal-banking/cards/credit-cards/mitc-and-ca.html"
+                                                    target="_top">Credit Card T&amp;C</a></li>
+
+                                            <li><a href="/content/kotakcl/en/customer-service/public-notices.html"
+                                                    target="_blank">Public Notice</a></li>
+
+                                            <li><a href="/content/kotakcl/en/investor-relations/financial-results/regulatory-disclosure.html"
+                                                    target="_top">Regulatory Disclosure</a></li>
+
+                                            <li><a href="/content/dam/Kotak/others/Certificate-Correspondent-Accounts-KM-Inc.pdf"
+                                                    target="_blank">USA Patriot Act Certification</a></li>
+
+                                            <li><a href="/content/dam/Kotak/others/anti-money-laundering-questionnaire.pdf"
+                                                    target="_blank">Wolfsberg AML Questionnaire</a></li>
+
+                                            <li><a href="/content/kotakcl/en/ifsc-banking-unit.html" target="_top">IFSC
+                                                    Banking Unit</a></li>
+
+                                            <li><a href="/content/kotakcl/en/knowledge-centre.html"
+                                                    target="_top">Knowledge Centre</a></li>
+
+                                            <li><a href="/content/kotakcl/en/bank-auctions.html" target="_top">Auction
+                                                    Cum Sale Notice</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-trgr-2 clearfix">
+                            <i class="down-arow sprite-img"></i>
+                            <div class="nav-title">
+                                <div class="clearfix">
+                                    <div class="ohidden">
+                                        <h4>Kotak Group Companies</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-container-2" style="display: none;">
+                            <div class="footer-sitemap">
+                                <ul>
+                                    <li><a href="https://assetmanagement.kotak.com/?utm_source=kotak_bank&amp;utm_medium=link_redirection"
+                                            target="_blank">Kotak Asset Management</a></li>
+
+                                    <li><a href="http://www.kotakgeneralinsurance.com/" target="_blank">Kotak General
+                                            Insurance</a></li>
+
+                                    <li><a href="https://kie.kotak.com/" target="_blank">Kotak Institutional
+                                            Equities</a></li>
+
+                                    <li><a href="http://investindia.kotak.com/" target="_blank">Kotak International
+                                            Business</a></li>
+
+                                    <li><a href="https://alternateassets.kotak.com" target="_blank">Kotak Investment
+                                            Advisors</a></li>
+
+                                    <li><a href="http://www.investmentbank.kotak.com" target="_blank">Kotak Investment
+                                            Banking</a></li>
+
+                                    <li><a href="https://insurance.kotak.com/" target="_blank">Kotak Life Insurance</a>
+                                    </li>
+
+                                    <li><a href="http://www.kmil.co.in/" target="_blank">Kotak Mahindra Investments</a>
+                                    </li>
+
+                                    <li><a href="http://carloan.kotak.com/" target="_blank">Kotak Mahindra Prime</a>
+                                    </li>
+
+                                    <li><a href="http://www.kotaksecurities.com/" target="_blank">Kotak Securities
+                                            Limited</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section> -->
+            <section class="copyright-box">
+                <div class="container">
+                    <span class="copybox-text">Copyright Kotak Mahindra Bank Limited.</span>
+
+                    | <a href="/content/kotakcl/en/disclaimer.html" target="_top">Disclaimer</a>
+
+                    | <a href="/content/kotakcl/en/privacy-policy.html" target="_top">Privacy Policy</a>
+
+                    | <a href="/content/kotakcl/en/terms-conditions.html" target="_top">Terms &amp; Conditions</a>
+
+                </div>
+            </section>
+            <!--End footer-->
+
+
+
+
+
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(".prcd-btn").on("click", function () {
+            $("#application-step-1").hide();
+            $("#application-step-2").show();
+            $('body').find(".step-1").addClass('completed');
+            $('body').find(".step-2").removeClass('disabled');
+        });
+        $(".back-btn").on("click", function () {
+            $("#application-step-2").hide();
+            $("#application-step-1").show();
+            $('body').find(".step-1").removeClass('completed');
+            $('body').find(".step-2").addClass('disabled');
+        });
+  function scrollToTop(){
+    window.scrollTo(0, 0);
+  }
+
+    </script>
+</body>
+
+</html>

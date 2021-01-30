@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/pl_style_revamp.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/clientlib-all.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>Kotak Business Loan</title>
+     <style type="text/css">
+        .right-info-box h1,
+        h2,
+        label,
+        input,
+        .modal-content {
+            /* font-family: 'Source Sans Pro', sans-serif !important; */
+            
+  font-family: Roboto !important;
+        }
+    </style> 
+</head>
+
+<body>
+    <header class="header-box animated" style="top: -62px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-9 col-xs-7">
+                    <div class="clearfix">
+                        <div class="logo">
+                            <img src="images/kotak-logo.png"
+                                alt="Kotak Mahindra Bank" height="44px" width="173px" title="Kotak Mahindra Bank">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-5 loging-box clearfix">
+                    <ul>
+                        <li>
+                            <span class="pl-icon"></span><h3>Business Loan</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner-div inside">
+        <div class="container text-center">
+            <h2 style="z-index: 1;">We’ve got the answer to <br> your Business Loan requirement!</h2>
+            <p>Dear user, before diving into the specifics of your loan, let’s verify your details.</p>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="container" style="transform: none;">
+        <div class="row" id="main-div" style="transform: none;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 right-section">
+                <div class="right-info-box main_div_l_margin" id="application-step-1">
+                    <div id="selectCustDiv" class="qde1-seg text-center">
+                        <h2 style="font-size: 28px; margin-left: -18px;" class="tab-txt-center">Are you an existing KOTAK Customer?<span class="req"> *</span></h2>
+                        <div class="ex-btn-grp btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="radio-btn btn btn-primary y_n_btn">
+                                <input class="mr-10" type="radio" name="existingCust" id="existingCustYes" value="1">Yes
+                            </label>
+                            <label class="radio-btn btn btn-secondary y_n_btn">
+                                <input class="mr-10 ml-50" type="radio" name="existingCust" id="existingCustNo"
+                                    value="2">No
+                            </label>
+                        </div>
+                    </div>
+                    <div id="qde1_form1" class="qde1-seg" style="display: none;">
+                        <h1><span class="in-img-icon"></span>Let's get you logged in</h1>
+                        <div class="mb-4 pt-4"></div>
+                        <form name="submit_ntb_form" id="submit_ntb_form" method="post" action="javascript:;"
+                            autocomplete="off" novalidate="novalidate">
+                            <ul class="form-sec">
+                                <li>
+                                    <label>Registered Mobile Number <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li>
+                                </li>
+                                <li>
+                                    <label>Business Location <span class="req">*</span></label>
+                                    <select  data-placeholder="Select" name="residingCity" id="residingCity"
+                                        class="selectDiv form-select singleSelectBoxValid"
+                                        onchange="showHideAreaDistrict('area',this);" tabindex="-1" aria-hidden="true">
+                                        <option value="select">Select</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                    <!-- <span class="select2 select2-container select2-container--default" dir="ltr"
+                                        style="width: auto;">
+                                        <span class="selection">
+                                            <span class="select2-selection select2-selection--single" role="combobox"
+                                                aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"
+                                                tabindex="0" aria-labelledby="select2-residingCity-container">
+                                                <span class="select2-selection__rendered"
+                                                    id="select2-residingCity-container">
+                                                    <span style="color:black" class="select2-selection__placeholder">Select</span>
+                                                </span>
+                                                <span class="select2-selection__arrow" role="presentation">
+                                                    <b role="presentation"></b>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                    </span> -->
+                                </li>
+                                <li> <div style="display: none;" id="area">
+                                    <label>Area/District <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40"></div>
+                                </li>
+                                <li id="emp_name_li" style="">
+                                    <label>Date of Birth <span class="req">*</span></label>
+                                    <div>
+                                    <input style="position: relative;" type="date" name="co_date_of_birth" id="co_date_of_birth" value=""
+                                        maxlength="10" class="form-control calender-icon hasDatepick"
+                                        autocomplete="off"> <p style="padding:0px;position: absolute;
+                                        left: 98%;
+                                        top: 25px;color:#768497">Or</p></div>
+                                </li>
+                                <li>
+                                    <label>CRN <span class="req">*</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                                <li>
+                                    <div style="display: flex;">
+                                        <div class="captcha-div">
+                                            <span id="captcha"></span>
+
+                                    </div>
+                                    <!-- <br/>  <a id="captcha_reload" href="#">reload</a> -->
+                                    <div style="width: 100%; margin-left: 20px;"><label>Enter Captcha Code<span class="req">*</span></label>
+
+                                            <div style=" position:relative;">
+                                    <input  type="text" name="preEMIs" id="preEMIs"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus refresh_icon" value=""
+                                        maxlength="6" onkeydown="return M.digit(event);"
+                                        onfocus="M.toolTip_TM('Total of All EMI', event, this, 155, 25, 10);"
+                                        autocomplete="off"> <img onclick="captchaCode()" src="./images/refresh2.png"></div> </div>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+                            <ul class="form-sec">
+                                <li class="last-li">
+                                    <input type="checkbox" class="css-checkbox" name="infoprovide" id="infoprovide">
+                                    <label for="infoprovide" class="label-content">By clicking the checkbox, I hereby
+                                        give consent to receive calls/communication from Kotak Mahindra Bank for
+                                        marketing purposes through Telephone/ Mobile/SMS/Email for the above mentioned
+                                        product/offer and that such content will prevail over any current or subsequent
+                                        registration of your number for 'Do Not Call". I even authorize the bank & its
+                                        group companies and their agents to pull my credit bureau report & exchange or
+                                        share all the information relating to me and my repayment history with banks,
+                                        financial institutions, credit bureaus, agencies, statutory bodies, etc. as may
+                                        be required or as they deem fit. "Credit at Sole Discretion of Kotak Mahindra
+                                        Bank Ltd . & subject to guidelines issued by RBI from time to time. Bank may
+                                        engage the services of marketing agents for the purpose of sourcing loan assets.
+                                    </label>
+                                </li>
+                                <li class="last-li">
+                                    <input type="checkbox" class="css-checkbox" name="infoprovide" id="infoprovide2">
+                                    <label for="infoprovide2" class="label-content">By clicking the checkbox, I hereby
+                                        give consent to receive further communication, offers, updates on my whatsapp
+                                        number +91 from Kotak Mahindra Bank & its group companies and their agents time
+                                        to time. </label>
+                                </li>
+                                <li class="last-li">
+                                    <button type="submit" id="subtn" class="prcd-btn send-otp" style="cursor:pointer;"
+                                        data-toggle="modal" data-target="#sendOTPETB">Send OTP</button>
+                                    <input value="Back" onclick="window.location.href=window.location.href"
+                                        class="back-btn" type="button">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div id="qde1_form2" class="qde1-seg" style="display: none;">
+                        <h1><span class="in-img-icon"></span>Hi there, let's get to know you</h1>
+                        <div class="mb-4 pt-4"></div>
+                        <form name="submit_ntb_form" id="submit_ntb_form" method="post" action="javascript:;"
+                            autocomplete="off" novalidate="novalidate">
+                            <ul class="form-sec">
+                                <li>
+                                    <label>First Name <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li>
+                                    <label>Last Name <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40">
+                                </li>
+                                <li>
+                                    <label>Business Location <span class="req">*</span></label>
+                                    <select  data-placeholder="Select" name="residingCity" id="residingCity"
+                                        class="selectDiv form-select singleSelectBoxValid"
+                                        onchange="showHideAreaDistrict('area2',this);" tabindex="-1" aria-hidden="true">
+                                        <option value="select">Select</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                    <!-- <span class="select2 select2-container select2-container--default" dir="ltr"
+                                        style="width: auto;">
+                                        <span class="selection">
+                                            <span class="select2-selection select2-selection--single" role="combobox"
+                                                aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"
+                                                tabindex="0" aria-labelledby="select2-residingCity-container">
+                                                <span class="select2-selection__rendered"
+                                                    id="select2-residingCity-container">
+                                                    <span style="color:black" class="select2-selection__placeholder">Select</span>
+                                                </span>
+                                                <span class="select2-selection__arrow" role="presentation">
+                                                    <b role="presentation"></b>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="dropdown-wrapper" aria-hidden="true"></span>
+                                    </span> -->
+                                </li>
+                                <li> <div style="display: none;" id="area2">
+                                    <label>Area/District <span class="req">*</span></label>
+                                    <input id="mobile" class="form-control only-char" type="text" name="mobile" value=""
+                                        onfocus="M.toolTip_TM('Name as per PAN', event, this, 155, 65, 10);"
+                                        maxlength="40"></div>
+                                </li>
+                                <li>
+                                    <label>Mobile Number <span class="req">*</span></label>
+                                    <input type="text" name="grossmonthlyincome" id="grossmonthlyincome"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus"
+                                        autocomplete="off" value=""
+                                        onfocus="M.toolTip_TM('Include only the fixed Net Monthly Salary credited. Do not include any incentives, bonus or one-time payments', event, this, 155, 25, 10);"
+                                        onblur="getExperice();" maxlength="10">
+                                </li>
+                                <li>
+                                </li>
+                                <li>
+                                    <div style="display: flex;">
+                                        <div class="captcha-div">
+                                            <span id="captcha2"></span>
+
+                                    </div>
+                                    <!-- <br/>  <a id="captcha_reload" href="#">reload</a> -->
+                                    <div style="width: 100%; margin-left: 20px;"><label>Enter Captcha Code<span class="req"> *</span></label>
+
+                                            <div style=" position:relative;">
+                                    <input  type="text" name="preEMIs" id="preEMIs"
+                                        class="form-control only-number formatMoneyOnblur unformatMoneyOnfocus refresh_icon" value=""
+                                        maxlength="6" onkeydown="return M.digit(event);"
+                                        onfocus="M.toolTip_TM('Total of All EMI', event, this, 155, 25, 10);"
+                                        autocomplete="off"> <img onclick="captchaCode()" src="./images/refresh2.png"></div> </div>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+                            <ul class="form-sec">
+                                <li class="last-li">
+                                    <input type="checkbox" class="css-checkbox" name="infoprovide" id="infoprovide">
+                                    <label for="infoprovide" class="label-content">By clicking the checkbox, I hereby
+                                        give consent to receive calls/communication from Kotak Mahindra Bank for
+                                        marketing purposes through Telephone/ Mobile/SMS/Email for the above mentioned
+                                        product/offer and that such content will prevail over any current or subsequent
+                                        registration of your number for 'Do Not Call". I even authorize the bank & its
+                                        group companies and their agents to pull my credit bureau report & exchange or
+                                        share all the information relating to me and my repayment history with banks,
+                                        financial institutions, credit bureaus, agencies, statutory bodies, etc. as may
+                                        be required or as they deem fit. "Credit at Sole Discretion of Kotak Mahindra
+                                        Bank Ltd . & subject to guidelines issued by RBI from time to time. Bank may
+                                        engage the services of marketing agents for the purpose of sourcing loan assets.
+                                    </label>
+                                </li>
+                                <li class="last-li">
+                                    <input type="checkbox" class="css-checkbox" name="infoprovide" id="infoprovide">
+                                    <label for="infoprovide" class="label-content">By clicking the checkbox, I hereby
+                                        give consent to receive further communication, offers, updates on my whatsapp
+                                        number +91 from Kotak Mahindra Bank & its group companies and their agents time
+                                        to time. </label>
+                                </li>
+                                <li class="last-li">
+                                    <button type="submit" id="subtn" class="prcd-btn send-otp" style="cursor:pointer;"
+                                        data-toggle="modal" data-target="#sendOTPNTB">Send OTP</button>
+                                    <input value="Back" onclick="window.location.href=window.location.href"
+                                        class="back-btn" type="button">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="modal fade" id="sendOTPETB" tabindex="-1" data-backdrop="static" data-keyboard="false"
+                        role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h2><span class="tick-icon"></span>Verify your mobile</h2>
+                                    <p><strong>Please key in the 6 digit OTP sent on your mobile no. ******3569</strong>
+                                    </p>
+                                    <form>
+                                        <input id="codeBox1" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" />
+                                        <input id="codeBox2" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)" />
+                                        <input id="codeBox3" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)" />
+                                        <input id="codeBox4" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)" />
+                                        <input id="codeBox5" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(5, event)" onfocus="onFocusEvent(5)" />
+                                        <input id="codeBox6" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(6, event)" onfocus="onFocusEvent(6)" />
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="footer-btn">
+                                        <button type="button" class="btn prcd-btn float-left"
+                                            onclick="location.href='inside_etb.html'">Proceed</button>
+                                        <button type="button" class="btn back-btn float-right"
+                                            data-dismiss="modal">Back</button>
+                                    </div>
+                                    <div class="footer-info clear pt-4 text-left">
+                                        Not received the OTP in last 30 seconds! <a href="">Resend OTP</a> to me on:
+                                        ******3569
+                                        <br><br>
+                                        <a href="">Click here</a> to receive OTP via phone call
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="sendOTPNTB" tabindex="-1" data-backdrop="static" data-keyboard="false"
+                        role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h2><span class="tick-icon"></span>Verify your mobile</h2>
+                                    <p><strong>Please key in the 6 digit OTP sent on your mobile no. ******3569</strong>
+                                    </p>
+                                    <form>
+                                        <input id="codeBox1" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" />
+                                        <input id="codeBox2" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(2, event)" onfocus="onFocusEvent(2)" />
+                                        <input id="codeBox3" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(3, event)" onfocus="onFocusEvent(3)" />
+                                        <input id="codeBox4" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(4, event)" onfocus="onFocusEvent(4)" />
+                                        <input id="codeBox5" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(5, event)" onfocus="onFocusEvent(5)" />
+                                        <input id="codeBox6" type="number" maxlength="1"
+                                            onkeyup="onKeyUpEvent(6, event)" onfocus="onFocusEvent(6)" />
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="footer-btn">
+                                        <button type="button" class="btn prcd-btn float-left"
+                                            onclick="location.href='inside_ntb.html'">Proceed</button>
+                                        <button type="button" class="btn back-btn float-right"
+                                            data-dismiss="modal">Back</button>
+                                    </div>
+                                    <div class="footer-info clear pt-4 text-left">
+                                        Not received the OTP in last 30 seconds! <a href="">Resend OTP</a> to me on:
+                                        ******3569
+                                        <br><br>
+                                        <a href="">Click here</a> to receive OTP via phone call
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+<section class="copyright-box">
+                <div class="container">
+                    <span class="copybox-text">Copyright Kotak Mahindra Bank Limited.</span>
+
+                    | <a href="/content/kotakcl/en/disclaimer.html" target="_top">Disclaimer</a>
+
+                    | <a href="/content/kotakcl/en/privacy-policy.html" target="_top">Privacy Policy</a>
+
+                    | <a href="/content/kotakcl/en/terms-conditions.html" target="_top">Terms &amp; Conditions</a>
+
+                </div>
+            </section>
+            <!--End footer-->
+
+
+
+
+
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            captchaCode();
+            $("input[name$='existingCust']").on("change", function () {
+                var test = $(this).val();
+
+                $("div.qde1-seg").hide();
+                $("#qde1_form" + test).show();
+            });
+        });
+
+        function getCodeBoxElement(index) {
+            return document.getElementById('codeBox' + index);
+        }
+        function onKeyUpEvent(index, event) {
+            const eventCode = event.which || event.keyCode;
+            if (getCodeBoxElement(index).value.length === 1) {
+                if (index !== 6) {
+                    getCodeBoxElement(index + 1).focus();
+                } else {
+                    getCodeBoxElement(index).blur();
+                    // Submit code
+                    console.log('submit code ');
+                }
+            }
+            if (eventCode === 8 && index !== 1) {
+                getCodeBoxElement(index - 1).focus();
+            }
+        }
+        function onFocusEvent(index) {
+            for (item = 1; item < index; item++) {
+                const currentElement = getCodeBoxElement(item);
+                if (!currentElement.value) {
+                    currentElement.focus();
+                    break;
+                }
+            }
+        }
+        function captchaCode() {
+  var Numb1, Numb2, Numb3, Numb4, Code; 
+  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';    
+  Numb1 = (Math.ceil(Math.random() * 10)-1).toString();
+  Numb2 = (Math.ceil(Math.random() * 10)-1).toString();
+  Numb3 = characters.charAt(Math.ceil(Math.random() * 10)-1);
+  Numb4 = (Math.ceil(Math.random() * 10)-1).toString();
+  Numb5 = characters.charAt(Math.floor(Math.random() * 10)-1);
+  Numb6 = (Math.ceil(Math.random() * 10)-1).toString();
+  
+  Code = Numb1 +' '+Numb2 + Numb3 +' '+Numb4+' '+Numb5+Numb6;
+  $("#captcha span").remove();
+  $("#captcha2 span").remove();
+  $("#captcha").append("<span id='code'>" + Code + "</span>");
+  $("#captcha2").append("<span id='code'>" + Code + "</span>");
+}
+function showHideAreaDistrict(divId, element)
+{
+    console.log(divId)
+    document.getElementById(divId).style.display = element.value == 'others' ? 'block' : 'none';
+}
+    </script>
+</body>
+
+</html>
